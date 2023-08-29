@@ -13,11 +13,11 @@ npm install
 You can run this command:
 
 ```
-npm run dev
+npm run dev 
 ```
 
 To Run the app in development mode.
-Open http://localhost:3000 to view it in the browser.
+Open http://localhost:5173 to view it in the browser.
 
 The page will automatically reload if you make changes to the code.
 You will see the build errors and lint warnings in the console.
