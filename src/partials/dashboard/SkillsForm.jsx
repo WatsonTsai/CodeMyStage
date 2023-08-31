@@ -29,20 +29,20 @@ function SkillsForm() {
           postForm(studentId, skills);
         }}
       >
-        <div className="mb-4">
-          <label className="mb-2">請輸入學號</label>
+        <div className="mb-2 ">
+          <label className="py-2 display: block">請輸入學號</label>
           <input
             type="text"
-            className="w-full border rounded"
+            className="w-full border rounded border-slate-300"
             value={studentId}
             onChange={(e) => setStudentId(e.target.value)}
           />
         </div>
         {Object.keys(skills).map((skill) => (
-          <div className="" key={skill}>
-            <label className="">{skill}</label>
+          <div className="py-2" key={skill}>
+            <label className="pr-4">{skill}</label>
             <select
-              className="border rounded"
+              className="border rounded border-slate-300"
               value={skills[skill]}
               onChange={(e) =>
                 handleSelectChange(skill, Number(e.target.value))
